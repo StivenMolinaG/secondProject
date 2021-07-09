@@ -1,0 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    border: 0.1rem solid #000000;
+    margin: 0.5rem;
+}
