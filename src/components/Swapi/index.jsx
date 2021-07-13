@@ -26,7 +26,7 @@ class Swapi extends Component {
     render(){
         return (
             <div>
-                <div className="title">
+                <div className="title bgr__swapi">
                     <p>Swapi</p>
                 </div>
                 <section className="app__people">

@@ -26,7 +26,7 @@ class pokemon extends Component{
     render(){
         return (
             <div>
-                <div className="title">
+                <div className="title bgr__pokemon">
                     <p>Pokemon</p>
                 </div>
                 <section className="app__pokemon">

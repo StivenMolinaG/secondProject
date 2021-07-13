@@ -1,8 +1,7 @@
-.bgr__pokemon{
-    background-color: #5a5afd;
+.bgr__rickandmorty{
+    background-color: #44ee6f;
 }
-
-.app__pokemon {
+.app__rickandmorty {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
