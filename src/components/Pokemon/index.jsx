@@ -1,25 +1,25 @@
 import React, { Component } from 'react'
-import './Swapi.css'
+import '../Pokemon/pokemon.css'
 import PeopleCard from '../PeopleCard';
-const SWAPI_URL = 'https://swapi.dev/api/';
+const POKEMON_URL = 'https://pokeapi.co/api/v2/';
 
-class Swapi extends Component {
+class pokemon extends Component{
     constructor(props) {
         super(props);
         this.state = {
-            people: []
+            pokemon: []
         }
     }
 
     componentDidMount() {
-        const endpoint = SWAPI_URL + 'people/';
+        const endpoint = POKEMON_URL + 'pokemon/?offset=0&limit=10';
         fetch(endpoint)
             .then(res => res.json())
             .then(data => {
                 console.log('@data: ', data)
                 const results = data && data.results || [];
-                console.log('@results: ', results);
-                this.setState({ people: results });
+                console.log('@results pokemon: ', results);
+                this.setState({ pokemon: results });
             });
     }
 
@@ -27,15 +27,13 @@ class Swapi extends Component {
         return (
             <div>
                 <div className="title">
-                    <p>Swapi</p>
+                    <p>Pokemon</p>
                 </div>
-                <section className="app__people">
+                <section className="app__pokemon">
                     {
-                        this.state.people.map((p, index) => {
+                        this.state.pokemon.map((p, index) => {
                             return (
                                 <PeopleCard name={p.name}
-                                    birth_year={p.birth_year}
-                                    gender={p.gender}
                                     key={index} />
                             );
                         })
@@ -46,4 +44,4 @@ class Swapi extends Component {
     }
 }
 
-export default Swapi;
+export default pokemon

@@ -4,7 +4,7 @@
     border-bottom: 0.2rem solid #000;
     border-top: 0.2rem solid #000;
 }
-.app__people {
+.app__pokemon {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
