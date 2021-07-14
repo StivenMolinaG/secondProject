@@ -27,7 +27,7 @@ class rickandmorty extends Component {
     render(){
         return (
             <div>
-                <div className="title bgr__rickandmorty">
+                <div className="title">
                     <p>Rick and Morty</p>
                 </div>
                 <section className="app__rickandmorty">

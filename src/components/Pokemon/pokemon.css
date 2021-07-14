@@ -1,7 +1,3 @@
-.bgr__pokemon{
-    background-color: #5a5afd;
-}
-
 .app__pokemon {
     display: flex;
     justify-content: space-evenly;

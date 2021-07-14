@@ -6,9 +6,6 @@
     font-weight: 500;
     padding: 0.5rem;
 }
-.bgr__swapi{
-    background-color: #edf100;
-}
 .app__people {
     display: flex;
     justify-content: space-evenly;
