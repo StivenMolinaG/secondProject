@@ -1,10 +1,9 @@
 import React, { Component }  from 'react';
 import './App.css';
-import Swapi from '../Swapi';
 import Pokemon from '../Pokemon';
 import RickandMorty from '../RickandMorty';
-
-const SWAPI_URL = 'https://swapi.dev/api/';
+import Header from '../Header';
+import Home from '../Home';
 const POKEMON_URL = 'https://pokeapi.co/api/v2/';
 const URL_RICKANDMORTY = 'https://rickandmortyapi.com/api/';
 
@@ -13,7 +12,6 @@ class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            people: [],
             pokemon: [],
             rickAndMorty: []
         }
@@ -48,12 +46,8 @@ class App extends Component {
     render() {
         return (
             <div className="container">
-                <div className="Header">
-                <p>My Second Project</p>
-                </div>
-                <Swapi people={this.state.people}/>
-                <Pokemon pokemon={this.state.pokemon}/>
-                <RickandMorty rickAndMorty={this.state.rickAndMorty}/>
+                <Header />
+                <Home />
             </div>
         );
     }
