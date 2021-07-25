@@ -1,0 +1,22 @@
+[
+    {
+        "optionText": "Home",
+        "option": "home",
+        "path": "/"
+    },
+    {
+        "optionText": "Swapi",
+        "option": "swapi",
+        "path": "/Swapi"
+    },
+    {
+        "optionText": "Pokemon",
+        "option": "pokemon",
+        "path": "/Pokemon"
+    },
+    {
+        "optionText": "RickAndMorty",
+        "option": "rickandmorty",
+        "path": "/Ricky"
+    }
+]
