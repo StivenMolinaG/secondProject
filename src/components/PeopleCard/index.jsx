@@ -3,12 +3,13 @@ import './PeopleCard.css'
 
 class PeopleCard extends Component {
     render() {
+        const { name, birth_year, gender } = this.props;
         return (
             <div className="peopleCard">
                 <div>
-                    <p className="paragraph">Name: {this.props.name}</p>
-                    <p className="paragraph">Gender: {this.props.gender}</p>
-                    <p className="paragraph">Birth Year: {this.props.birth_year}</p>
+                    {name && <p className="paragraph">Name: {name}</p>}
+                    {gender && <p className="paragraph">Gender: {gender}</p>}
+                    {birth_year && <p className="paragraph">Birth Year: {birth_year}</p>}
                 </div>
             </div>
         );
