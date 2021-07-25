@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import { withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import HeaderOption from '../headerOption';
 import headerOptions from './headerOptions.json';
 import './header.css';
@@ -12,6 +12,7 @@ class Header extends Component {
         }
     }
     onClick = (activeOption, pathOption) => {
+        console.log("@Props_PathOption: ", pathOption);
         this.setState({ activeOption: activeOption });
         this.props.history.push(pathOption);
     }
@@ -22,6 +23,7 @@ class Header extends Component {
                     <ul className="nav__list list">
                         {
                             headerOptions.map((hopt, index) => {
+                                console.log("@Path: ", hopt);
                                 return (
                                     <HeaderOption activeOption={this.state.activeOption}
                                         onClick={this.onClick}
@@ -38,4 +40,4 @@ class Header extends Component {
         );
     }
 }
-export default Header;
+export default withRouter(Header);

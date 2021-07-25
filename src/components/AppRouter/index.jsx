@@ -1,13 +1,13 @@
 import React, { Fragment } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Home from '../App';
-import Swapi from '../../pages/Swapi';
-import Footer from '../Footer';
 import Header from '../Header';
-import NotFound from '../NotFound';
-import RickandMorty from '../RickandMorty';
-import Pokemon from '../Pokemon';
+import Home from '../../pages/Home';
+import Swapi from '../../pages/Swapi';
+import Pokemon from '../../pages/Pokemon';
+import RickandMorty from '../../pages/RickandMorty';
 import './AppRouter.css';
+import Footer from '../Footer';
+import NotFound from '../NotFound';
 
 function AppRouter() {
     return (
