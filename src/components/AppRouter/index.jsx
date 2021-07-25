@@ -7,7 +7,7 @@ import Pokemon from '../../pages/Pokemon';
 import RickandMorty from '../../pages/RickandMorty';
 import './AppRouter.css';
 import Footer from '../Footer';
-// import NotFound from '../NotFound';
+import NotFound from '../NotFound';
 
 function AppRouter() {
     return (
@@ -18,7 +18,7 @@ function AppRouter() {
                 <Route path="/Swapi" component={Swapi} />
                 <Route path="/Pokemon" component={Pokemon} />
                 <Route path="/Ricky" component={RickandMorty} />
-                {/* <Route component={NotFound} /> */}
+                <Route component={NotFound} />
             </Switch>
             <Footer />
         </Fragment>
