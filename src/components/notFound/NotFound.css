@@ -1,0 +1,18 @@
+.notfound {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 140px);
+    justify-content: center;
+    width: 100%;
+}
+
+.notfound__title {
+    color: rgb(74, 74, 236);
+    font-size: 128px;
+}
+
+.notfound__description {
+    color: #fff;
+    font-size: 32px;
+}

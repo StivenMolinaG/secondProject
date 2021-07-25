@@ -1,0 +1,18 @@
+.Home {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 140px);
+    justify-content: center;
+    width: 100%;
+}
+
+.Home__title {
+    color: rgb(74, 74, 236);
+    font-size: 68px;
+}
+
+.Home__description {
+    color: #fff;
+    font-size: 22px;
+}

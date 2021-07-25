@@ -4,7 +4,9 @@ const INACTIVE_CLASSNAMES = 'list__item';
 
 function HeaderOption(props) {
     const activeOption = props && props.activeOption || '';
+    console.log("activeOption: ", activeOption);
     const optionText = props && props.optionText || '';
+    console.log("optionTest: ", optionText);
     const option = props && props.option || '';
     const onClick = props && props.onClick || null;
     const isActive = activeOption === option;
