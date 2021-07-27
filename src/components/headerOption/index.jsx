@@ -8,6 +8,7 @@ function HeaderOption(props) {
     const optionText = props && props.optionText || '';
     console.log("optionTest: ", optionText);
     const option = props && props.option || '';
+    const path = props && props.path || '';
     const onClick = props && props.onClick || null;
     const isActive = activeOption === option;
     const isOnClickFunction = typeof onClick === 'function';
@@ -16,7 +17,7 @@ function HeaderOption(props) {
     if (onClick && isOnClickFunction) {
         return (
             <li className={itemClassnames}
-                onClick={() => onClick(option)}>
+                onClick={() => onClick(option, path)}>
                 {optionText}
             </li>
         );
